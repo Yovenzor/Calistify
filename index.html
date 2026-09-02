@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Calistify | Train Smarter. Build Stronger.</title>
+    <meta name="description" content="Calistify is the modern calisthenics app for tracking workouts, building strength, mastering skills and measuring your progress." />
+    <meta property="og:title" content="Calistify | Train Smarter. Build Stronger." />
+    <meta property="og:description" content="The modern calisthenics platform built to track every rep, measure your progress and help you master the skills you've been chasing." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+  <body>
+    <!-- ============ NAVBAR ============ -->
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo" aria-label="Calistify home">
+          <img width="90" height="90" src="./public/logo-transparent.png" alt="Calistify logo" class="logo-icon" />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#progress" class="nav-link">Progress</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#how-it-works" class="nav-link">How it works</a>
+          <a href="#download" class="nav-cta-mobile">Download App</a>
+        </div>
+        <a href="#download" class="nav-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download App
+        </a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+      <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-noise"></div>
+      </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="pulse-dot"></span>
+            <span>Built for calisthenics athletes by calisthenics athletes</span>
+          </div>
+          <h1 class="hero-title reveal" style="--delay:0.1s">
+            TRAIN <span class="lime">SMARTER.</span><br />
+            BUILD <span class="lime">STRONGER.</span>
+          </h1>
+          <p class="hero-subtitle reveal" style="--delay:0.2s">
+            The modern calisthenics platform built to track every rep, measure your progress and help you master the skills you've been chasing.
+          </p>
+          <div class="hero-buttons reveal" style="--delay:0.3s">
+            <a href="#download" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Calistify
+            </a>    
+            <a href="#features" class="btn btn-secondary">Explore the App</a>
+          </div>
+          <p class="hero-platforms reveal" style="--delay:0.4s">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-android"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 10l0 6" /><path d="M20 10l0 6" /><path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" /><path d="M8 3l1 2" /><path d="M16 3l-1 2" /><path d="M9 18l0 3" /><path d="M15 18l0 3" /></svg>
+            Available for Android
+          </p>
+        </div>
+
+        <!-- Phone Mockup -->
+        <div class="hero-phone reveal" style="--delay:0.2s">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="app-header">
+                <div class="app-logo">
+                  <img width="85" height="85" src="./public/logo-transparent.png" alt="Calistify logo" />
+                </div>
+              </div>
+              <div class="app-greeting">
+                <p class="app-greeting-text">Good evening, Yovenzor.</p>
+                <div class="app-streak">
+                  <span class="app-streak-num">14</span>
+                  <span class="app-streak-label">DAY STREAK</span>
+                </div>
+              </div>
+              <div class="app-today-card">
+                <p class="app-today-label">TODAY'S WORKOUT</p>
+                <p class="app-today-name">PULL DAY</p>
+                <div class="app-today-stats">
+                  <span>6 exercises</span><span>·</span><span>42 min</span>
+                </div>
+                <div class="app-today-btn">Start Workout</div>
+              </div>
+              <div class="app-stat-row">
+                <div class="app-mini-stat">
+                  <p class="app-mini-num lime">+35<span class="unit">kg</span></p>
+                  <p class="app-mini-label">Weighted Pull-Up PR</p>
+                </div>
+                <div class="app-mini-stat">
+                  <p class="app-mini-num">12,480</p>
+                  <p class="app-mini-label">Total Reps</p>
+                </div>
+              </div>
+              <div class="app-activity">
+                <p class="app-activity-label">WEEKLY ACTIVITY</p>
+                <div class="app-activity-bars">
+                  <div class="bar active"></div><div class="bar"></div><div class="bar active"></div>
+                  <div class="bar active"></div><div class="bar"></div><div class="bar active"></div><div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-shadow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRODUCTION ============ -->
+    <section id="intro" class="section section-split ">
+      <div class="container">
+        <div class="split-layout">
+          <div class="split-left">
+            <h2 class="section-title reveal">STOP GUESSING.<br /><span class="lime">START PROGRESSING.</span></h2>
+            <p class="section-text reveal" style="--delay:0.1s">
+              Calistify turns your training into measurable progress. Track workouts, record every set, monitor your strength and see exactly how you're improving over time.
+            </p>
+            <div class="intro-features reveal" style="--delay:0.2s">
+              <div class="intro-feature"><span class="check-icon"></span>Track every workout with precision</div>
+              <div class="intro-feature"><span class="check-icon"></span>See your strength grow visually</div>
+              <div class="intro-feature"><span class="check-icon"></span>Master skills with clear progressions</div>
+            </div>
+          </div>
+          <div class="split-right reveal" style="--delay:0.15s">
+            <div class="phone-frame phone-sm">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-workout">
+                  <p class="mock-title">PULL DAY</p>
+                  <p class="mock-timer">42:31</p>
+                  <div class="mock-exercise">
+                    <p class="mock-ex-name">Weighted Pull-Up</p>
+                    <div class="mock-set"><span class="mock-set-num">1</span><span class="mock-set-val">+30kg × 6</span><span class="mock-check done"></span></div>
+                    <div class="mock-set"><span class="mock-set-num">2</span><span class="mock-set-val">+30kg × 5</span><span class="mock-check done"></span></div>
+                    <div class="mock-set"><span class="mock-set-num">3</span><span class="mock-set-val">+25kg × 6</span><span class="mock-check done"></span></div>
+                  </div>
+                  <div class="mock-rest">
+                    <div class="mock-rest-ring"><span>01:30</span></div>
+                    <p class="mock-rest-label">REST TIMER</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURE: WORKOUT TRACKING ============ -->
+    <section id="features" class="section feature-section">
+      <div class="container">
+        <div class="feature-grid reverse">
+          <div class="feature-phone reveal">
+            <div class="phone-frame phone-sm">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-tracking">
+                  <p class="mock-title">WEIGHTED PULL-UP</p>
+                  <div class="mock-set-row">
+                    <span class="mock-set-head">Set</span><span class="mock-set-head">Weight</span><span class="mock-set-head">Reps</span><span class="mock-set-head">Done</span>
+                  </div>
+                  <div class="mock-set-row done">
+                    <span class="mock-set-num-l">1</span><span>+30 kg</span><span>6</span><span class="mock-check done"></span>
+                  </div>
+                  <div class="mock-set-row done">
+                    <span class="mock-set-num-l">2</span><span>+30 kg</span><span>5</span><span class="mock-check done"></span>
+                  </div>
+                  <div class="mock-set-row done">
+                    <span class="mock-set-num-l">3</span><span>+25 kg</span><span>6</span><span class="mock-check done"></span>
+                  </div>
+                  <div class="mock-add-set">+ Add Set</div>
+                  <div class="mock-rest-mini">
+                    <div class="mock-rest-ring-sm"><span>01:30</span></div>
+                    <span class="mock-rest-text">REST TIMER</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-content reveal" style="--delay:0.1s">
+            <p class="feature-label">WORKOUT TRACKING</p>
+            <h2 class="section-title">EVERY REP <span class="lime">COUNTS.</span></h2>
+            <p class="section-text">Track every workout with a fast, distraction-free interface designed specifically for calisthenics. Record weight, reps, hold times and RPE — all in a few taps.</p>
+            <div class="feature-bullets">
+              <div class="feature-bullet"><span class="bullet-dot"></span>Bodyweight &amp; weighted tracking</div>
+              <div class="feature-bullet"><span class="bullet-dot"></span>Static hold duration tracking</div>
+              <div class="feature-bullet"><span class="bullet-dot"></span>Automatic volume calculations</div>
+              <div class="feature-bullet"><span class="bullet-dot"></span>Built-in rest timer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURE: PROGRESS ============ -->
+    <section id="progress" class=" section feature-section">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-content reveal">
+            <p class="feature-label">PROGRESS ANALYTICS</p>
+            <h2 class="section-title">SEE YOUR <span class="lime">STRENGTH GROW.</span></h2>
+            <p class="section-text">Turn every workout into meaningful data. Visualize your training volume, track your reps, and watch your strength climb over time with clean, premium charts.</p>
+            <div class="feature-bullets">
+              <div class="feature-bullet"><span class="bullet-dot"></span>Training volume over time</div>
+              <div class="feature-bullet"><span class="bullet-dot"></span>Workout frequency tracking</div>
+              <div class="feature-bullet"><span class="bullet-dot"></span>Exercise-specific progression</div>
+              <div class="feature-bullet"><span class="bullet-dot"></span>Estimated 1RM calculations</div>
+            </div>
+          </div>
+          <div class="feature-phone reveal" style="--delay:0.1s">
+            <div class="phone-frame phone-sm">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-progress">
+                  <p class="mock-title">TRAINING PROGRESS</p>
+                  <div class="mock-chart-tabs"><span class="active">Volume</span><span>Reps</span><span>Weight</span></div>
+                  <div class="mock-chart" id="mockChart"></div>
+                  <div class="mock-progress-stats">
+                    <div class="mock-ps"><span class="mock-ps-val lime">+20kg</span><span class="mock-ps-label">Weighted Pull-Up</span></div>
+                    <div class="mock-ps"><span class="mock-ps-val">+15kg</span><span class="mock-ps-label">Weighted Dip</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURE: PERSONAL RECORDS ============ -->
+    <section id="records" class="section feature-section">
+      <div class="container">
+        <div class="section-center">
+          <p class="feature-label reveal">PERSONAL RECORDS</p>
+          <h2 class="section-title reveal" style="--delay:0.05s">BREAK YOUR <span class="lime">OWN RECORDS.</span></h2>
+          <p class="section-text center reveal" style="--delay:0.1s">Every PR is celebrated. Watch your personal records stack up as you get stronger.</p>
+        </div>
+        <div class="pr-grid">
+          <div class="pr-card reveal">
+            <div class="pr-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55.47.98.97 1.21C12.15 18.75 13 20.24 13 22"/><path d="M14 14.66V17c0 .55-.47.98-.97 1.21C11.85 18.75 11 20.24 11 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <p class="pr-exercise">WEIGHTED PULL-UP</p>
+            <p class="pr-value">+35<span class="pr-unit">KG</span></p>
+            <p class="pr-best">PERSONAL BEST</p>
+            <p class="pr-change lime">↑ +5 kg this month</p>
+          </div>
+          <div class="pr-card reveal" style="--delay:0.1s">
+            <div class="pr-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55.47.98.97 1.21C12.15 18.75 13 20.24 13 22"/><path d="M14 14.66V17c0 .55-.47.98-.97 1.21C11.85 18.75 11 20.24 11 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <p class="pr-exercise">WEIGHTED DIP</p>
+            <p class="pr-value">+45<span class="pr-unit">KG</span></p>
+            <p class="pr-best">PERSONAL BEST</p>
+            <p class="pr-change lime">↑ +8 kg this month</p>
+          </div>
+          <div class="pr-card reveal" style="--delay:0.15s">
+            <div class="pr-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55.47.98.97 1.21C12.15 18.75 13 20.24 13 22"/><path d="M14 14.66V17c0 .55-.47.98-.97 1.21C11.85 18.75 11 20.24 11 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <p class="pr-exercise">PULL-UPS</p>
+            <p class="pr-value">18<span class="pr-unit">REPS</span></p>
+            <p class="pr-best">PERSONAL BEST</p>
+            <p class="pr-change lime">↑ +3 reps this month</p>
+          </div>
+          <div class="pr-card reveal" style="--delay:0.2s">
+            <div class="pr-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55.47.98.97 1.21C12.15 18.75 13 20.24 13 22"/><path d="M14 14.66V17c0 .55-.47.98-.97 1.21C11.85 18.75 11 20.24 11 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <p class="pr-exercise">L-SIT</p>
+            <p class="pr-value">42<span class="pr-unit">SEC</span></p>
+            <p class="pr-best">PERSONAL BEST</p>
+            <p class="pr-change lime">↑ +6 sec this month</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURE: SKILLS ============ -->
+    <section id="skills" class=" section feature-section section-dark">
+      <div class="container">
+        <div class="feature-grid reverse">
+          <div class="feature-phone reveal">
+            <div class="phone-frame phone-sm">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-skills">
+                  <p class="mock-title">SKILL PROGRESSION</p>
+                  <p class="mock-skill-name">FRONT LEVER</p>
+                  <div class="mock-skill-tree">
+                    <div class="mock-skill-node done"><span class="mock-skill-dot"></span><span>Tuck</span></div>
+                    <div class="mock-skill-line done"></div>
+                    <div class="mock-skill-node done"><span class="mock-skill-dot"></span><span>Adv Tuck</span></div>
+                    <div class="mock-skill-line done"></div>
+                    <div class="mock-skill-node current"><span class="mock-skill-dot"></span><span>One Leg</span></div>
+                    <div class="mock-skill-line"></div>
+                    <div class="mock-skill-node locked"><span class="mock-skill-dot"></span><span>Straddle</span></div>
+                    <div class="mock-skill-line"></div>
+                    <div class="mock-skill-node locked"><span class="mock-skill-dot"></span><span>Full</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-content reveal" style="--delay:0.1s">
+            <p class="feature-label">SKILL PROGRESSION</p>
+            <h2 class="section-title">MASTER THE <span class="lime">MOVEMENTS.</span></h2>
+            <p class="section-text">From your first handstand to a full planche, track every stage of your progression. Calistify's skill trees show you exactly where you are and what comes next.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Handstand</span>
+              <span class="skill-tag">Front Lever</span>
+              <span class="skill-tag">Planche</span>
+              <span class="skill-tag">Muscle-Up</span>
+              <span class="skill-tag">Back Lever</span>
+              <span class="skill-tag">Human Flag</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEGINNER TO ELITE ============ -->
+    <section class=" section section-levels">
+      <div class="container">
+        <div class="section-center">
+          <h2 class="section-title reveal">START WHERE YOU ARE.<br /><span class="lime">SEE HOW FAR YOU CAN GO.</span></h2>
+        </div>
+        <div class="levels-track">
+          <div class="level-card reveal">
+            <div class="level-num">01</div>
+            <p class="level-name">BEGINNER</p>
+            <p class="level-desc">Build your foundation with basic movements and consistency.</p>
+          </div>
+          <div class="level-connector reveal" style="--delay:0.1s"></div>
+          <div class="level-card reveal" style="--delay:0.15s">
+            <div class="level-num">02</div>
+            <p class="level-name">INTERMEDIATE</p>
+            <p class="level-desc">Increase strength and start exploring weighted calisthenics.</p>
+          </div>
+          <div class="level-connector reveal" style="--delay:0.2s"></div>
+          <div class="level-card reveal" style="--delay:0.25s">
+            <div class="level-num">03</div>
+            <p class="level-name">ADVANCED</p>
+            <p class="level-desc">Track weighted training and begin working on advanced skills.</p>
+          </div>
+          <div class="level-connector reveal" style="--delay:0.3s"></div>
+          <div class="level-card reveal" style="--delay:0.35s">
+            <div class="level-num lime-text">04</div>
+            <p class="level-name">ELITE</p>
+            <p class="level-desc">Measure performance, chase records and master the hardest skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXERCISE LIBRARY ============ -->
+    <section id="library" class="  section">
+      <div class="container">
+        <div class="section-center">
+          <h2 class="section-title reveal">ONE PLATFORM.<br /><span class="lime">HUNDREDS OF MOVEMENTS.</span></h2>
+          <p class="section-text center reveal" style="--delay:0.05s">A complete calisthenics exercise library, organized by category and difficulty.</p>
+        </div>
+        <div class="exercise-grid">
+          <div class="exercise-card reveal">
+            <p class="ex-card-cat lime">PUSH</p>
+            <div class="ex-card-list"><span>Dip</span><span>Push-Up</span><span>Handstand Push-Up</span><span>Planche</span></div>
+          </div>
+          <div class="exercise-card reveal" style="--delay:0.05s">
+            <p class="ex-card-cat lime">PULL</p>
+            <div class="ex-card-list"><span>Pull-Up</span><span>Chin-Up</span><span>Muscle-Up</span><span>Front Lever</span><span>Back Lever</span></div>
+          </div>
+          <div class="exercise-card reveal" style="--delay:0.1s">
+            <p class="ex-card-cat lime">CORE</p>
+            <div class="ex-card-list"><span>L-Sit</span><span>Dragon Flag</span><span>Toes To Bar</span><span>Hollow Hold</span></div>
+          </div>
+          <div class="exercise-card reveal" style="--delay:0.15s">
+            <p class="ex-card-cat lime">LEGS</p>
+            <div class="ex-card-list"><span>Pistol Squat</span><span>Nordic Curl</span><span>Bulgarian Split Squat</span></div>
+          </div>
+          <div class="exercise-card reveal" style="--delay:0.2s">
+            <p class="ex-card-cat lime">SKILLS</p>
+            <div class="ex-card-list"><span>Handstand</span><span>Planche</span><span>Front Lever</span><span>Human Flag</span><span>Muscle-Up</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CUSTOM WORKOUTS ============ -->
+    <section class=" section feature-section">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-content reveal">
+            <p class="feature-label">CUSTOM WORKOUTS</p>
+            <h2 class="section-title">YOUR TRAINING.<br /><span class="lime">YOUR RULES.</span></h2>
+            <p class="section-text">Create reusable routines tailored to your goals. Pick exercises, set target sets and reps, and start training in seconds.</p>
+            <br>
+            <a href="#download" class="btn btn-primary btn-small">Build Your Workout</a>
+          </div>
+          <div class="feature-phone reveal" style="--delay:0.1s">
+            <div class="phone-frame phone-sm">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-custom">
+                  <p class="mock-title">PULL DAY</p>
+                  <div class="mock-custom-ex"><span>Weighted Pull-Up</span><span class="mock-custom-sets">4 × 6</span></div>
+                  <div class="mock-custom-ex"><span>Weighted Dip</span><span class="mock-custom-sets">3 × 8</span></div>
+                  <div class="mock-custom-ex"><span>Muscle-Up</span><span class="mock-custom-sets">3 × 5</span></div>
+                  <div class="mock-custom-ex"><span>Front Lever</span><span class="mock-custom-sets">3 × 12s</span></div>
+                  <div class="mock-custom-add">+ Add Exercise</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REST TIMER ============ -->
+    <section class="section section-rest">
+      <div class="container">
+        <div class="rest-layout">
+          <div class="rest-timer-visual reveal">
+            <div class="rest-ring-outer">
+              <div class="rest-ring-inner">
+                <span class="rest-time">01:30</span>
+              </div>  
+            </div>
+            <div class="rest-quick-btns" id="restQuickBtns">
+              <button data-seconds="30">30s</button>
+              <button data-seconds="60">60s</button>
+              <button data-seconds="90" class="active">90s</button>
+              <button data-seconds="120">2m</button>
+              <button data-seconds="180">3m</button>
+            </div>
+          </div>
+          <div class="rest-content reveal" style="--delay:0.1s">
+            <p class="feature-label">TRAINING EXPERIENCE</p>
+            <h2 class="section-title">FOCUS ON THE <span class="lime">NEXT SET.</span></h2>
+            <p class="section-text">Calistify keeps the training experience simple. Auto-starting rest timers, quick set completion, and a focused interface mean you can concentrate on performance — not managing spreadsheets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CALISTIFY ============ -->
+    <section class="section section-why">
+      <div class="container">
+        <div class="section-center">
+          <h2 class="section-title reveal">BUILT <span class="lime">DIFFERENT.</span></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <h3 class="why-title">TRACK</h3>
+            <p class="why-desc">Every rep. Every set. Every session. Nothing slips through the cracks.</p>
+          </div>
+          <div class="why-card reveal" style="--delay:0.1s">
+            <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+            <h3 class="why-title">PROGRESS</h3>
+            <p class="why-desc">See your strength increase over time with clean, visual analytics.</p>
+          </div>
+          <div class="why-card reveal" style="--delay:0.15s">
+            <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="15"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg></div>
+            <h3 class="why-title">MASTER</h3>
+            <p class="why-desc">Follow clear progressions toward advanced calisthenics skills.</p>
+          </div>
+          <div class="why-card reveal" style="--delay:0.2s">
+            <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div>
+            <h3 class="why-title">CONSISTENCY</h3>
+            <p class="why-desc">Build the discipline that creates real, lasting results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APP SHOWCASE ============ -->
+    <section class="section section-showcase">
+      <div class="container">
+        <div class="section-center">
+          <h2 class="section-title reveal">THE APP, <span class="lime">IN YOUR HANDS.</span></h2>
+        </div>
+        <div class="showcase-row">
+          <div class="showcase-phone reveal" style="--rot:-4deg;--delay:0s">
+            <div class="phone-frame phone-xs">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-mini-dashboard">
+                  <p class="mock-mini-title">Dashboard</p>
+                  <div class="mock-mini-stats"><div class="mock-mini-stat"><span class="lime">14</span><span>Streak</span></div><div class="mock-mini-stat"><span>48</span><span>Workouts</span></div></div>
+                  <div class="mock-mini-bars"><div></div><div class="lime-bg"></div><div></div><div class="lime-bg"></div><div></div><div class="lime-bg"></div><div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-phone reveal" style="--rot:2deg;--delay:0.1s">
+            <div class="phone-frame phone-xs">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-mini-workout">
+                  <p class="mock-mini-title">Active Workout</p>
+                  <p class="mock-mini-timer lime">42:31</p>
+                  <div class="mock-mini-set"><span>Pull-Up</span><span class="lime">+30kg × 6</span></div>
+                  <div class="mock-mini-set"><span>Dip</span><span>+40kg × 5</span></div>
+                  <div class="mock-mini-set"><span>Muscle-Up</span><span>5 reps</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-phone reveal" style="--rot:-2deg;--delay:0.15s">
+            <div class="phone-frame phone-xs">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-mini-progress">
+                  <p class="mock-mini-title">Progress</p>
+                  <div class="mock-mini-chart"><svg viewBox="0 0 100 40" preserveAspectRatio="none"><polyline points="0,35 15,30 30,25 45,20 60,15 75,10 90,8 100,5" fill="none" stroke="#B6FF00" stroke-width="2"/></svg></div>
+                  <p class="mock-mini-label">Training Volume</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-phone reveal" style="--rot:4deg;--delay:0.2s">
+            <div class="phone-frame phone-xs">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-mini-skills">
+                  <p class="mock-mini-title">Skills</p>
+                  <div class="mock-mini-skill"><span class="mock-mini-dot done"></span> Tuck</div>
+                  <div class="mock-mini-skill"><span class="mock-mini-dot done"></span> Adv Tuck</div>
+                  <div class="mock-mini-skill"><span class="mock-mini-dot current"></span> One Leg</div>
+                  <div class="mock-mini-skill"><span class="mock-mini-dot locked"></span> Straddle</div>
+                  <div class="mock-mini-skill"><span class="mock-mini-dot locked"></span> Full</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <div class="section-center">
+          <h2 class="section-title reveal">HOW IT <span class="lime">WORKS.</span></h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card reveal">
+            <p class="step-num lime">01</p>
+            <h3 class="step-title">DOWNLOAD</h3>
+            <p class="step-desc">Get Calistify on your phone from the App Store or Google Play.</p>
+          </div>
+          <div class="step-card reveal" style="--delay:0.1s">
+            <p class="step-num lime">02</p>
+            <h3 class="step-title">TRAIN</h3>
+            <p class="step-desc">Track your workouts and record every set with a fast, focused interface.</p>
+          </div>
+          <div class="step-card reveal" style="--delay:0.2s">
+            <p class="step-num lime">03</p>
+            <h3 class="step-title">PROGRESS</h3>
+            <p class="step-desc">Watch your strength and skills improve over time. Chase your next PR.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO IS IT FOR ============ -->
+    <section class="section section-who">
+      <div class="container">
+        <div class="section-center">
+          <h2 class="section-title reveal">WHO IS <span class="lime">CALISTIFY FOR?</span></h2>
+        </div>
+        <div class="who-grid">
+          <div class="who-card reveal">
+            <p class="who-name">BEGINNERS</p>
+            <p class="who-desc">Build your foundation with clear progressions and basic movements.</p>
+          </div>
+          <div class="who-card reveal" style="--delay:0.1s">
+            <p class="who-name">INTERMEDIATE</p>
+            <p class="who-desc">Increase strength and consistency with structured training.</p>
+          </div>
+          <div class="who-card reveal" style="--delay:0.15s">
+            <p class="who-name">ADVANCED</p>
+            <p class="who-desc">Track weighted training and work toward advanced calisthenics skills.</p>
+          </div>
+          <div class="who-card reveal" style="--delay:0.2s">
+            <p class="who-name">ATHLETES</p>
+            <p class="who-desc">Measure performance and chase new personal records with precision.</p>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section section-faq">
+      <div class="container container-narrow">
+        <div class="section-center">
+          <h2 class="section-title reveal">FREQUENTLY ASKED <span class="lime">QUESTIONS.</span></h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">What is Calistify?<span class="faq-icon"></span></button>
+            <div class="faq-answer"><p>Calistify is a modern calisthenics training and progress-tracking app designed specifically for bodyweight athletes. It helps you track workouts, measure progress, and master calisthenics skills through clear progression systems.</p></div>
+          </div>
+          <div class="faq-item reveal" style="--delay:0.05s">
+            <button class="faq-question" aria-expanded="false">Is Calistify free?<span class="faq-icon"></span></button>
+            <div class="faq-answer"><p>Calistify is completely free to download with no hidden fees or payments, all the features are available at no cost.</p></div>
+          </div>
+          <div class="faq-item reveal" style="--delay:0.1s">
+            <button class="faq-question" aria-expanded="false">Who is Calistify for?<span class="faq-icon"></span></button>
+            <div class="faq-answer"><p>Calistify is for anyone serious about calisthenics — from beginners building their foundation to elite athletes chasing new records. If you train with bodyweight, Calistify is built for you.</p></div>
+          </div>
+          <div class="faq-item reveal" style="--delay:0.15s">
+            <button class="faq-question" aria-expanded="false">Can I track weighted calisthenics?<span class="faq-icon"></span></button>
+            <div class="faq-answer"><p>Yes. Calistify fully supports weighted calisthenics. Track additional weight on pull-ups, dips, and any other exercise. Volume calculations automatically account for bodyweight plus added weight.</p></div>
+          </div>
+          <div class="faq-item reveal" style="--delay:0.2s">
+            <button class="faq-question" aria-expanded="false">Can I track skills like front lever and planche?<span class="faq-icon"></span></button>
+            <div class="faq-answer"><p>Absolutely. Calistify includes a dedicated skill progression system with visual trees for handstands, front levers, planche, muscle-ups, back levers, and human flags. Track hold durations and mark progression levels as you advance.</p></div>
+          </div>
+          <div class="faq-item reveal" style="--delay:0.25s">
+            <button class="faq-question" aria-expanded="false">Can I train without equipment?<span class="faq-icon"></span></button>
+            <div class="faq-answer"><p>Yes. Many exercises in Calistify require no equipment at all — push-ups, squats, hollow holds, and more. A pull-up bar opens up the full library, but you can build a complete routine with zero equipment.</p></div>
+          </div>
+          <div class="faq-item reveal" style="--delay:0.3s">
+            <button class="faq-question" aria-expanded="false">Is Calistify available on iOS?<span class="faq-icon"></span></button>
+            <div class="faq-answer"><p>No, Calistify is not available on the App Store for iPhone or iPad.</p></div>
+          </div>
+          <div class="faq-item reveal" style="--delay:0.35s">
+            <button class="faq-question" aria-expanded="false">Is Calistify available on Android?<span class="faq-icon"></span></button>
+            <div class="faq-answer"><p>Yes, Calistify is available on Android devices, via APK file.</p></div>
+          </div>
+          <div class="faq-item reveal" style="--delay:0.4s">
+            <button class="faq-question" aria-expanded="false">How does progress tracking work?<span class="faq-icon"></span></button>
+            <div class="faq-answer"><p>Every set you log contributes to your progress data. Calistify automatically calculates training volume, total reps, personal records, and workout frequency. You can view your progress over time with clean visual charts, and see exercise-specific progression for any movement.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section id="download" class="section section-final-cta">
+      <div class="final-glow"></div>
+      <div class="container">
+        <div class="final-content">
+          <h2 class="download-title reveal">YOUR NEXT PR<br />IS <span class="lime">WAITING.</span></h2>
+          <br />
+          <a href="#download" class="btn btn-primary btn-large reveal" style="--delay:0.2s">DOWNLOAD THE APP</a>
+        </div>
+      </div>
+    </section>
+
+  <footer class="footer">
+  <div class="footer-glow" aria-hidden="true"></div>
+
+  <div class="footer-hero">
+    <a href="#hero" class="brand-logo">
+      <div class="logo-icon-wrapper">
+        <img width="680" height="680" src="/public/logo-transparent.png" alt="Calistify Logo" class="logo-icon-" />
+      </div>
+    </a>
+  </div>
+
+  <div class="footer-grid">
+    <div class="footer-col">
+      <p class="footer-heading">App</p>
+      <ul class="footer-links">
+        <li><a href="#progress">User's Guide</a></li>
+      </ul>
+    </div>
+
+
+    <div class="footer-col">
+      <p class="footer-heading">Support</p>
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-col-social">
+      <p class="footer-heading">Follow Us</p>
+      <div class="social-list">
+        <a href="#" class="social-item"><span>Instagram</span> <span class="arrow">↗</span></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Languages</p>
+      <div class="language-chips">
+        <button class="lang-chip active">English 🇬🇧</button>
+        <button class="lang-chip">Español 🇪🇸</button>
+        <button class="lang-chip">Hindi 🇮🇳</button> 
+        <button class="lang-chip">Français 🇫🇷</button>
+        <button class="lang-chip">Mandarin Chinese 🇨🇳</button>
+        <button class="lang-chip">Italiano 🇮🇹</button>
+        <button class="lang-chip">Arab 🇸🇦</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 CALISTIFY INC. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
+
+
+    <script type="module" src="/js/script.js"></script>
+  </body>
+</html>
