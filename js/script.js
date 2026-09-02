@@ -238,6 +238,7 @@ function formatRestTime(sec) {
 }
 
 function updateRestRing() {
+  if (!restRingOuter) return;
   const pct = restTotalSec > 0 ? restRemainingSec / restTotalSec : 0;
   const degrees = pct * 360;
   restRingOuter.style.background = `conic-gradient(var(--lime) 0deg, var(--lime) ${degrees}deg, var(--bg-elevated) ${degrees}deg)`;
@@ -294,22 +295,24 @@ function resetRestTimer() {
   updateRestRing();
 }
 
-restQuickBtns.querySelectorAll('button').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    restQuickBtns.querySelectorAll('button').forEach((b) => b.classList.remove('active'));
-    btn.classList.add('active');
-    const sec = parseInt(btn.dataset.seconds, 10);
-    setRestTime(sec);
-    if (restRunning) {
-      clearInterval(restInterval);
-      restRunning = false;
-      restStartBtn.textContent = 'Start';
-    }
+if (restQuickBtns && restStartBtn && restResetBtn) {
+  restQuickBtns.querySelectorAll('button').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      restQuickBtns.querySelectorAll('button').forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      const sec = parseInt(btn.dataset.seconds, 10);
+      setRestTime(sec);
+      if (restRunning) {
+        clearInterval(restInterval);
+        restRunning = false;
+        restStartBtn.textContent = 'Start';
+      }
+    });
   });
-});
 
-restStartBtn.addEventListener('click', startRestTimer);
-restResetBtn.addEventListener('click', resetRestTimer);
+  restStartBtn.addEventListener('click', startRestTimer);
+  restResetBtn.addEventListener('click', resetRestTimer);
+}
 
 
 /* ---------- Smooth Anchor Offset ---------- */
@@ -350,4 +353,4 @@ window.addEventListener('scroll', updateActiveNav, { passive: true });
 /* ---------- Init ---------- */
 injectStatusBars();
 buildChart();
-updateRestRing();
+if (restRingOuter) updateRestRing();
