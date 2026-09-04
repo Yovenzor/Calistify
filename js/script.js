@@ -350,6 +350,47 @@ function updateActiveNav() {
 window.addEventListener('scroll', updateActiveNav, { passive: true });
 
 
+/* ---------- Language Switching ---------- */
+const LANG_MAP = {
+  en: 'en',
+  es: 'es',
+  hi: 'hi',
+  fr: 'fr',
+  zh: 'zh',
+  it: 'it',
+  ar: 'ar',
+};
+
+function applyTranslations(lang) {
+  const dict = window.TRANSLATIONS && window.TRANSLATIONS[lang];
+  if (!dict) return;
+
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key]) el.textContent = dict[key];
+  });
+
+  document.documentElement.setAttribute('lang', lang);
+  document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+  document.querySelectorAll('.lang-chip').forEach((chip) => {
+    chip.classList.toggle('active', chip.dataset.lang === lang);
+  });
+
+  try { localStorage.setItem('calistify-lang', lang); } catch (e) {}
+}
+
+document.querySelectorAll('.lang-chip').forEach((chip) => {
+  chip.addEventListener('click', () => {
+    const lang = chip.dataset.lang;
+    if (lang) applyTranslations(lang);
+  });
+});
+
+let savedLang = 'en';
+try { savedLang = localStorage.getItem('calistify-lang') || 'en'; } catch (e) {}
+applyTranslations(savedLang);
+
 /* ---------- Init ---------- */
 injectStatusBars();
 buildChart();
