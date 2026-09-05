@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Privacy Policy — Calistify</title>
     <meta name="description" content="Calistify Privacy Policy. Learn how Calistify collects, uses, and protects your personal data." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
     <nav id="navbar" class="navbar">
@@ -18,13 +18,13 @@
           <img width="90" height="90" src="./public/logo-transparent.png" alt="Calistify logo" class="logo-icon" />
         </a>
         <div class="nav-links" id="navLinks">
-          <a href="#features" class="nav-link">Features</a>
-          <a href="#progress" class="nav-link">Progress</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#how-it-works" class="nav-link">How it works</a>
-          <a href="#download" class="nav-cta-mobile">Download App</a>
+          <a href="#features" class="nav-link" data-i18n="nav.features">Features</a>
+          <a href="#progress" class="nav-link" data-i18n="nav.progress">Progress</a>
+          <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <a href="#how-it-works" class="nav-link" data-i18n="nav.howItWorks">How it works</a>
+          <a href="#download" class="nav-cta-mobile" data-i18n="nav.downloadApp">Download App</a>
         </div>
-        <a href="#download" class="nav-cta">
+        <a href="#download" class="nav-cta" data-i18n="nav.downloadApp">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download App
         </a>
@@ -38,121 +38,135 @@
     <div class="legal-container">
         <a href="/" class="legal-back">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>
-        Back to Calistify
+        <span data-i18n="privacy.back">Back to Calistify</span>
         </a>
         <div class="legal-header">
-        <h1 class="legal-title">Privacy Policy</h1>
-        <p class="legal-updated">Last updated: January 2026</p>
+        <h1 class="legal-title" data-i18n="privacy.title">Privacy Policy</h1>
+        <p class="legal-updated" data-i18n="privacy.updated">Last updated: January 2026</p>
         </div>
         <div class="legal-nav">
-        <a href="#overview">1. Overview</a>
-        <a href="#data">2. Data We Collect</a>
-        <a href="#use">3. How We Use Data</a>
-        <a href="#sharing">4. Data Sharing</a>
-        <a href="#storage">5. Data Storage</a>
-        <a href="#rights">6. Your Rights</a>
-        <a href="#retention">7. Data Retention</a>
-        <a href="#children">8. Children's Privacy</a>
-        <a href="#security">9. Security</a>
-        <a href="#changes">10. Changes to Policy</a>
-        <a href="#contact">11. Contact</a>
+        <a href="#overview" data-i18n="privacy.nav1">1. Overview</a>
+        <a href="#data" data-i18n="privacy.nav2">2. Data We Collect</a>
+        <a href="#use" data-i18n="privacy.nav3">3. How We Use Data</a>
+        <a href="#sharing" data-i18n="privacy.nav4">4. Data Sharing</a>
+        <a href="#storage" data-i18n="privacy.nav5">5. Data Storage</a>
+        <a href="#rights" data-i18n="privacy.nav6">6. Your Rights</a>
+        <a href="#retention" data-i18n="privacy.nav7">7. Data Retention</a>
+        <a href="#children" data-i18n="privacy.nav8">8. Children's Privacy</a>
+        <a href="#security" data-i18n="privacy.nav9">9. Security</a>
+        <a href="#changes" data-i18n="privacy.nav10">10. Changes to Policy</a>
+        <a href="#contact" data-i18n="privacy.nav11">11. Contact</a>
         </div>
 
         <div class="legal-section" id="overview">
-        <h2>1. Overview</h2>
-        <p>Calistify ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your personal data when you use the Calistify app ("the Service").</p>
-        <p>By using the Service, you consent to the data practices described in this policy.</p>
+        <h2 data-i18n="privacy.s1.title">1. Overview</h2>
+        <p data-i18n="privacy.s1.p1">Calistify ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your personal data when you use the Calistify app ("the Service").</p>
+        <p data-i18n="privacy.s1.p2">By using the Service, you consent to the data practices described in this policy.</p>
         </div>
 
         <div class="legal-section" id="data">
-        <h2>2. Data We Collect</h2>
-        <p>We collect the following types of data:</p>
-        <p><strong style="color: var(--text-primary);">Account Data:</strong> Email address, username, and authentication tokens when you create an account.</p>
-        <p><strong style="color: var(--text-primary);">Workout Data:</strong> Exercise logs, sets, reps, weights, durations, personal records, routines, and notes you create.</p>
-        <p><strong style="color: var(--text-primary);">Profile Data:</strong> Bodyweight, training goals, and preferences you provide.</p>
-        <p><strong style="color: var(--text-primary);">Usage Data:</strong> App interactions, feature usage, device type, operating system, and crash reports.</p>
+        <h2 data-i18n="privacy.s2.title">2. Data We Collect</h2>
+        <p data-i18n="privacy.s2.p1">We collect the following types of data:</p>
+        <p data-i18n="privacy.s2.p2"><strong style="color: var(--text-primary);">Account Data:</strong> Email address, username, and authentication tokens when you create an account.</p>
+        <p data-i18n="privacy.s2.p3"><strong style="color: var(--text-primary);">Workout Data:</strong> Exercise logs, sets, reps, weights, durations, personal records, routines, and notes you create.</p>
+        <p data-i18n="privacy.s2.p4"><strong style="color: var(--text-primary);">Profile Data:</strong> Bodyweight, training goals, and preferences you provide.</p>
+        <p data-i18n="privacy.s2.p5"><strong style="color: var(--text-primary);">Usage Data:</strong> App interactions, feature usage, device type, operating system, and crash reports.</p>
         </div>
 
         <div class="legal-section" id="use">
-        <h2>3. How We Use Data</h2>
-        <p>We use your data to:</p>
+        <h2 data-i18n="privacy.s3.title">3. How We Use Data</h2>
+        <p data-i18n="privacy.s3.p1">We use your data to:</p>
         <ul>
-            <li>Provide and maintain the Service, including storing your workout history</li>
-            <li>Calculate progress metrics such as training volume, personal records, and streaks</li>
-            <li>Display charts, analytics, and skill progression tracking</li>
-            <li>Sync your data across devices when you sign in</li>
-            <li>Send service-related notifications such as workout reminders (if enabled)</li>
-            <li>Improve the Service through aggregated, anonymized analytics</li>
-            <li>Provide customer support when you contact us</li>
+            <li data-i18n="privacy.s3.ul1">Provide and maintain the Service, including storing your workout history</li>
+            <li data-i18n="privacy.s3.ul2">Calculate progress metrics such as training volume, personal records, and streaks</li>
+            <li data-i18n="privacy.s3.ul3">Display charts, analytics, and skill progression tracking</li>
+            <li data-i18n="privacy.s3.ul4">Sync your data across devices when you sign in</li>
+            <li data-i18n="privacy.s3.ul5">Send service-related notifications such as workout reminders (if enabled)</li>
+            <li data-i18n="privacy.s3.ul6">Improve the Service through aggregated, anonymized analytics</li>
+            <li data-i18n="privacy.s3.ul7">Provide customer support when you contact us</li>
         </ul>
-        <p>We do not sell your personal data to third parties.</p>
+        <p data-i18n="privacy.s3.p2">We do not sell your personal data to third parties.</p>
         </div>
 
         <div class="legal-section" id="sharing">
-        <h2>4. Data Sharing</h2>
-        <p>We may share your data with:</p>
+        <h2 data-i18n="privacy.s4.title">4. Data Sharing</h2>
+        <p data-i18n="privacy.s4.p1">We may share your data with:</p>
         <ul>
-            <li><strong style="color: var(--text-primary);">Service Providers:</strong> Cloud hosting, analytics, and crash reporting services that help us operate the Service. These providers are bound by confidentiality obligations.</li>
-            <li><strong style="color: var(--text-primary);">App Stores:</strong> Apple App Store and Google Play for billing and subscription management.</li>
-            <li><strong style="color: var(--text-primary);">Legal Authorities:</strong> If required by law, court order, or to protect our rights and safety.</li>
+            <li data-i18n="privacy.s4.ul1"><strong style="color: var(--text-primary);">Service Providers:</strong> Cloud hosting, analytics, and crash reporting services that help us operate the Service. These providers are bound by confidentiality obligations.</li>
+            <li data-i18n="privacy.s4.ul2"><strong style="color: var(--text-primary);">App Stores:</strong> Apple App Store and Google Play for billing and subscription management.</li>
+            <li data-i18n="privacy.s4.ul3"><strong style="color: var(--text-primary);">Legal Authorities:</strong> If required by law, court order, or to protect our rights and safety.</li>
         </ul>
-        <p>We never share your workout data with advertisers.</p>
+        <p data-i18n="privacy.s4.p2">We never share your workout data with advertisers.</p>
         </div>
 
         <div class="legal-section" id="storage">
-        <h2>5. Data Storage</h2>
-        <p>Your data is stored on secure cloud servers. Workout data is also cached locally on your device for offline access. When you sign in, your data syncs between your device and our servers.</p>
-        <p>If you use the Service without creating an account, your workout data is stored only on your device and is not transmitted to our servers.</p>
+        <h2 data-i18n="privacy.s5.title">5. Data Storage</h2>
+        <p data-i18n="privacy.s5.p1">Your data is stored on secure cloud servers. Workout data is also cached locally on your device for offline access. When you sign in, your data syncs between your device and our servers.</p>
+        <p data-i18n="privacy.s5.p2">If you use the Service without creating an account, your workout data is stored only on your device and is not transmitted to our servers.</p>
         </div>
 
         <div class="legal-section" id="rights">
-        <h2>6. Your Rights</h2>
-        <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+        <h2 data-i18n="privacy.s6.title">6. Your Rights</h2>
+        <p data-i18n="privacy.s6.p1">Depending on your location, you may have the following rights regarding your personal data:</p>
         <ul>
-            <li><strong style="color: var(--text-primary);">Access:</strong> Request a copy of your personal data</li>
-            <li><strong style="color: var(--text-primary);">Rectification:</strong> Correct inaccurate or incomplete data</li>
-            <li><strong style="color: var(--text-primary);">Erasure:</strong> Request deletion of your account and associated data</li>
-            <li><strong style="color: var(--text-primary);">Portability:</strong> Export your workout data in a standard format</li>
-            <li><strong style="color: var(--text-primary);">Withdrawal:</strong> Withdraw consent for data processing at any time</li>
+            <li data-i18n="privacy.s6.ul1"><strong style="color: var(--text-primary);">Access:</strong> Request a copy of your personal data</li>
+            <li data-i18n="privacy.s6.ul2"><strong style="color: var(--text-primary);">Rectification:</strong> Correct inaccurate or incomplete data</li>
+            <li data-i18n="privacy.s6.ul3"><strong style="color: var(--text-primary);">Erasure:</strong> Request deletion of your account and associated data</li>
+            <li data-i18n="privacy.s6.ul4"><strong style="color: var(--text-primary);">Portability:</strong> Export your workout data in a standard format</li>
+            <li data-i18n="privacy.s6.ul5"><strong style="color: var(--text-primary);">Withdrawal:</strong> Withdraw consent for data processing at any time</li>
         </ul>
-        <p>To exercise these rights, contact us at <span class="lime">privacy@calistify.app</span>.</p>
+        <p data-i18n="privacy.s6.p2">To exercise these rights, contact us at <span class="lime">privacy@calistify.app</span>.</p>
         </div>
 
         <div class="legal-section" id="retention">
-        <h2>7. Data Retention</h2>
-        <p>We retain your data for as long as your account is active. If you delete your account, we will remove your personal data from our servers within 30 days, except where we are legally required to retain it longer.</p>
-        <p>Workout data stored locally on your device remains until you uninstall the app or clear app data.</p>
+        <h2 data-i18n="privacy.s7.title">7. Data Retention</h2>
+        <p data-i18n="privacy.s7.p1">We retain your data for as long as your account is active. If you delete your account, we will remove your personal data from our servers within 30 days, except where we are legally required to retain it longer.</p>
+        <p data-i18n="privacy.s7.p2">Workout data stored locally on your device remains until you uninstall the app or clear app data.</p>
         </div>
 
         <div class="legal-section" id="children">
-        <h2>8. Children's Privacy</h2>
-        <p>Calistify is not directed at children under the age of 13. We do not knowingly collect personal data from children under 13. If you believe a child has provided us with personal data, please contact us and we will delete it.</p>
+        <h2 data-i18n="privacy.s8.title">8. Children's Privacy</h2>
+        <p data-i18n="privacy.s8.p1">Calistify is not directed at children under the age of 13. We do not knowingly collect personal data from children under 13. If you believe a child has provided us with personal data, please contact us and we will delete it.</p>
         </div>
 
         <div class="legal-section" id="security">
-        <h2>9. Security</h2>
-        <p>We implement industry-standard security measures to protect your data, including encryption in transit (TLS) and at rest. Authentication tokens are securely stored. However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+        <h2 data-i18n="privacy.s9.title">9. Security</h2>
+        <p data-i18n="privacy.s9.p1">We implement industry-standard security measures to protect your data, including encryption in transit (TLS) and at rest. Authentication tokens are securely stored. However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
         </div>
 
         <div class="legal-section" id="changes">
-        <h2>10. Changes to Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the updated policy within the Service. We encourage you to review this policy periodically.</p>
+        <h2 data-i18n="privacy.s10.title">10. Changes to Policy</h2>
+        <p data-i18n="privacy.s10.p1">We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the updated policy within the Service. We encourage you to review this policy periodically.</p>
         </div>
 
         <div class="legal-section" id="contact">
-        <h2>11. Contact</h2>
-        <p>If you have questions about this Privacy Policy or your personal data, please contact us at:</p>
-        <p>Email: <span class="lime">privacy@calistify.app</span></p>
+        <h2 data-i18n="privacy.s11.title">11. Contact</h2>
+        <p data-i18n="privacy.s11.p1">If you have questions about this Privacy Policy or your personal data, please contact us at:</p>
+        <p data-i18n="privacy.s11.p2">Email: <span class="lime">privacy@calistify.app</span></p>
         </div>
 
         <div class="legal-footer">
-        <p>&copy; 2026 Calistify. All rights reserved. This Privacy Policy was last updated in January 2026.</p>
+        <p data-i18n="privacy.footer">&copy; 2026 Calistify. All rights reserved. This Privacy Policy was last updated in January 2026.</p>
         </div>
     </div>
     </section>
 
-    
+    <div class="lang-switcher">
+      <div class="lang-switcher-inner">
+        <span class="lang-switcher-label" data-i18n="footer.languages">Languages</span>
+        <div class="language-chips">
+          <button class="lang-chip" data-lang="en">English 🇬🇧</button>
+          <button class="lang-chip" data-lang="es">Español 🇪🇸</button>
+          <button class="lang-chip" data-lang="hi">Hindi 🇮🇳</button>
+          <button class="lang-chip" data-lang="fr">Français 🇫🇷</button>
+          <button class="lang-chip" data-lang="zh">Mandarin Chinese 🇨🇳</button>
+          <button class="lang-chip" data-lang="it">Italiano 🇮🇹</button>
+          <button class="lang-chip" data-lang="ar">Arab 🇸🇦</button>
+        </div>
+      </div>
+    </div>
 
-    <script type="module" src="/js/script.js"></script>
+    <script src="./js/translations.js"></script>
+    <script type="module" src="./js/script.js"></script>
 </body>
 </html>
